@@ -70,6 +70,7 @@ try {
     }
     ;var filetypes = /(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|slxb|pps.*|vsd|vxd|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
     var baseHref = '';
+    console.log(`************* $`, $);
     $('body').delegate('a', 'click', function(event) {
         var el = jQuery(this);
         var href = (typeof (el.attr('href')) != 'undefined') ? el.attr('href') : "";
